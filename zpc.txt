@@ -1,0 +1,8 @@
+// pc:begin: S3
+s3
+// pc:end: S3
+
+// pc:begin: CloudFront
+s3/cdn.tf
+// pc:end: CloudFront
+

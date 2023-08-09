@@ -1,0 +1,58 @@
+[
+  {
+    "label": "IaC",
+    "description": "Infrastructure as Code",
+    "required": true,
+    "features": [
+      {
+        "label": "Terraform",
+        "description": "Terraform is an open-source infrastructure as code software tool created by HashiCorp.",
+        "depend_features": [],
+        "depend_categories": [],
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "label": "S3-Bucket",
+    "description": "Amazon S3 or Amazon Simple Storage Service is a service offered by Amazon Web Services that provides object storage through a web service interface.",
+    "required": false,
+    "features": [
+      {
+        "label": "S3",
+        "description": "Amazon S3 or Amazon Simple Storage Service is a service offered by Amazon Web Services that provides object storage through a web service interface.",
+        "depend_features": [],
+        "depend_categories": [],
+        "enabled": false
+      }
+    ]
+  },
+  {
+    "label": "Logs",
+    "description": "Save logs in a S3 bucket",
+    "required": false,
+    "features": [
+      {
+        "label": "log",
+        "description": "Save logs in a S3 bucket",
+        "depend_features": ["S3"],
+        "depend_categories": [],
+        "enabled": true
+      }
+    ]
+  },
+  {
+    "label": "Content-Delivery-Network",
+    "description": "Content Delivery Network (CDN) is a geographically distributed group of servers that work together to provide fast delivery of Internet content.",
+    "required": false,
+    "features": [
+      {
+        "label": "CloudFront",
+        "description": "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer-friendly environment.",
+        "depend_features": ["S3"],
+        "depend_categories": [],
+        "enabled": true
+      }
+    ]
+  }
+]

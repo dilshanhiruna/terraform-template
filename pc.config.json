@@ -1,0 +1,15 @@
+{
+  "ignore": [
+    "zpc.txt",
+    "node_modules",
+    ".terraform",
+    "bin",
+    "dist",
+    "docs",
+    ".git",
+    ".terraform.lock.hcl",
+    "terraform.tfstate",
+    "terraform.tfstate.backup",
+    "terraform.tfvars"
+  ]
+}
