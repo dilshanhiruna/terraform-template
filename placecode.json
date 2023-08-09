@@ -19,7 +19,7 @@
     "required": false,
     "features": [
       {
-        "label": "S3",
+        "label": "aws-s3",
         "description": "Amazon S3 or Amazon Simple Storage Service is a service offered by Amazon Web Services that provides object storage through a web service interface.",
         "depend_features": [],
         "depend_categories": [],
@@ -35,7 +35,7 @@
       {
         "label": "log",
         "description": "Save logs in a S3 bucket",
-        "depend_features": ["S3"],
+        "depend_features": ["aws-s3"],
         "depend_categories": [],
         "enabled": true
       }
@@ -49,7 +49,7 @@
       {
         "label": "CloudFront",
         "description": "Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer-friendly environment.",
-        "depend_features": ["S3"],
+        "depend_features": ["aws-s3"],
         "depend_categories": [],
         "enabled": true
       }

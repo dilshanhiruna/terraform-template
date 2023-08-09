@@ -1,6 +1,6 @@
-// pc:begin: S3
+// pc:begin: aws-s3
 s3
-// pc:end: S3
+// pc:end: aws-s3
 
 // pc:begin: CloudFront
 s3/cdn.tf
